@@ -175,7 +175,11 @@ const deleteProperty = async (req, res) => {
             return res.status(404).json({ error: 'Property category not found' });
         }
 
-        await videoRemoveCat({ Bucket: property.video.Bucket, Key: property.video.Key });
+  
+
+        if (property?.video && Object.keys(property.video).length !== 0) {
+          await videoRemoveCat({ Bucket: property.video.Bucket, Key: property.video.Key });
+        }
   
         // Iterate through projects and delete associated files from S3
         for (const project of property.images) {
