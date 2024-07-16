@@ -27,7 +27,8 @@ const awsConfig = {
             location: propertyData.location,
             images: propertyData.images,
             color: propertyData.color,
-            coordinate: propertyData.coordinate
+            coordinate: propertyData.coordinate , 
+            mapLink : propertyData.mapLink
         });
 
         // Save the property to the database

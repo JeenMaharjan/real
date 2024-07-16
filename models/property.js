@@ -9,6 +9,13 @@ const propertySchema = new Schema({
         required: "Name is required",
         
     },
+
+    maplink: {
+        type: String,
+        trim: true,
+     
+        
+    },
     slug: {
         type: String,
         
