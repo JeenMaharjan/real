@@ -18,6 +18,10 @@ const polygonSchema = new Schema({
  
 
     },
+
+    zoom: {
+        type: Number,
+    },
     
 
     images: {

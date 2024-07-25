@@ -21,7 +21,7 @@ const awsConfig = {
       // Create a new Property instance
       const newPolyline = new Polyline({
           title: polylineData.title,
-        
+          zoom: polylineData.zoom,
           desc: polylineData.desc,
           marker: polylineData.marker,
           width: polylineData.width,

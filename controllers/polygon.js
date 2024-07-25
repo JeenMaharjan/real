@@ -21,7 +21,7 @@ const awsConfig = {
       // Create a new Property instance
       const newPolygon = new Polygon({
           title: polygonData.title,
-        
+          zoom: polygonData.zoom,
           desc: polygonData.desc,
           marker: polygonData.marker,
 

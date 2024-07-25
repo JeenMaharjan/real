@@ -24,6 +24,10 @@ const polylineSchema = new Schema({
         type: Array,
     },
 
+    zoom: {
+        type: Number,
+    },
+
     width: {
         type: Number,
         trim: true,
