@@ -75,7 +75,7 @@ const uploadBannerPhoto = async (req, res) => {
           const type = file.type.split("/")[1];
         
           const params = {
-            Bucket: "tst-bucketyy", // Replace with your S3 bucket name
+            Bucket: "tstfilebucket", // Replace with your S3 bucket name
             Key: `tst/banner/${slug}/${nanoid()}.${type}`,
             Body: fileContent, // Use file content directly as Body
             ACL: "public-read",

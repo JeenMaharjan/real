@@ -74,7 +74,7 @@ const awsConfig = {
       const type = file.type.split("/")[1];
     
       const params = {
-        Bucket: "tst-bucketyy", // Replace with your S3 bucket name
+        Bucket: "tstfilebucket", // Replace with your S3 bucket name
         Key: `tst/images/${slug}/${nanoid()}.${type}`,
         Body: fileContent, // Use file content directly as Body
         ACL: "public-read",
@@ -133,7 +133,7 @@ const awsConfig = {
       const fileStream = fs.createReadStream(video.path);
       // image params
       const params = {
-        Bucket: "tst-bucketyy",
+        Bucket: "tstfilebucket",
         Key: `tst/video/${slug}/${nanoid()}.${video.type.split("/")[1]}`,
         Body: fileStream,
         ACL: "public-read",
